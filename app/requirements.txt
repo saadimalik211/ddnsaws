@@ -1,0 +1,2 @@
+boto3>=1.18,<2
+requests>=2.26,<3  # If you're making HTTP requests to retrieve the public IP
