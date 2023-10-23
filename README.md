@@ -28,43 +28,43 @@ SETUP AND DEPLOYMENT
 --------------------
 1. Clone the Repository:
    Clone the repository to your local server where Docker and Docker Compose are installed.
-
+```
    git clone https://your-repository-link.git
    cd path-to-your-cloned-repository
-
+```
 2. Configuration:
    Configure your AWS credentials and target DNS record:
 
    - Rename 'ddns.env.example' to 'ddns.env'.
    - Update 'ddns.env' with your AWS credentials and other necessary configurations.
-
+```
    AWS_ACCESS_KEY_ID=your_access_key_id
    AWS_SECRET_ACCESS_KEY=your_secret_access_key
    AWS_REGION=your_aws_region
    HOSTED_ZONE_ID=your_hosted_zone_id
-
+```
    Important: Keep your AWS credentials confidential to prevent unauthorized access.
 
 3. Build and Run with Docker:
    In the project's root directory, use Docker Compose to build and start the service.
-
+```
    docker-compose build
    docker-compose up -d
-
+```
    This will launch the service in the background, and it will continue running, periodically checking your server's IP address and updating the DNS records if necessary.
 
 
 USAGE
 -----
 'ddnsaws' is designed to run autonomously. You can, however, monitor its operation through Docker logs and status checks:
-
+```
    docker-compose logs -f  # Displays log output
    docker-compose ps       # Shows running services
-
+```
 To stop 'ddnsaws', use the following command:
-
+```
    docker-compose down
-
+```
 
 CONTRIBUTING
 ------------
