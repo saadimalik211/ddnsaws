@@ -1,0 +1,9 @@
+{
+    "_current_ip": "0.0.0.0",
+    "subdomainA.domain.com": "0.0.0.0",
+    "subdomainB.domain.com": "0.0.0.0",
+    "subdomainC.domain.com": "0.0.0.0",
+    "subdomainD.domain.com": "0.0.0.0",
+    "www.domain.com": "0.0.0.0"
+}
+
