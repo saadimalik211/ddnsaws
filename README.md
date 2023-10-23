@@ -29,8 +29,8 @@ SETUP AND DEPLOYMENT
 1. Clone the Repository:
    Clone the repository to your local server where Docker and Docker Compose are installed.
 ```
-   git clone https://your-repository-link.git
-   cd path-to-your-cloned-repository
+   git clone git@github.com:saadimalik211/ddnsaws.git
+   cd ddnsaws
 ```
 2. Configuration:
    Configure your AWS credentials and target DNS record:
@@ -81,7 +81,7 @@ Please ensure your contributions adhere to the existing coding style and functio
 
 LICENSE
 -------
-Distributed under the MIT License. See 'LICENSE' for more information.
+Distributed under the GNU License. See 'LICENSE' for more information.
 
 
 CONTACT
