@@ -2,12 +2,12 @@
 #                         Dynamic DNS Using AWS Route 53 (ddnsaws)
 --------------------------------------------------------------------------------
 
-DESCRIPTION
+##DESCRIPTION
 -----------
 'ddnsaws' is a tool that automates the process of keeping a DNS record updated with a server's most current IP address. This script is especially useful in environments with dynamic public IP addresses. It's Dockerized and uses AWS Boto3 for interacting with AWS services.
 
 
-FEATURES
+##FEATURES
 --------
 - Automatic IP detection: Regularly checks the public IP address of your server and updates AWS Route 53 if it changes.
 - Docker support: The tool is containerized for easy deployment and consistent run environments.
@@ -15,7 +15,7 @@ FEATURES
 - Error handling and logging: Provides efficient logging mechanisms for easy troubleshooting and operation monitoring.
 
 
-PREREQUISITES
+##PREREQUISITES
 -------------
 Before you deploy 'ddnsaws', ensure the following requirements are met:
 
@@ -24,15 +24,15 @@ Before you deploy 'ddnsaws', ensure the following requirements are met:
 - A domain managed via AWS Route 53.
 
 
-SETUP AND DEPLOYMENT
+##SETUP AND DEPLOYMENT
 --------------------
-1. Clone the Repository:
+###1. Clone the Repository:
    Clone the repository to your local server where Docker and Docker Compose are installed.
 
    git clone https://your-repository-link.git
    cd path-to-your-cloned-repository
 
-2. Configuration:
+###2. Configuration:
    Configure your AWS credentials and target DNS record:
 
    - Rename 'ddns.env.example' to 'ddns.env'.
@@ -45,7 +45,7 @@ SETUP AND DEPLOYMENT
 
    Important: Keep your AWS credentials confidential to prevent unauthorized access.
 
-3. Build and Run with Docker:
+###3. Build and Run with Docker:
    In the project's root directory, use Docker Compose to build and start the service.
 
    docker-compose build
@@ -54,7 +54,7 @@ SETUP AND DEPLOYMENT
    This will launch the service in the background, and it will continue running, periodically checking your server's IP address and updating the DNS records if necessary.
 
 
-USAGE
+##USAGE
 -----
 'ddnsaws' is designed to run autonomously. You can, however, monitor its operation through Docker logs and status checks:
 
@@ -66,7 +66,7 @@ To stop 'ddnsaws', use the following command:
    docker-compose down
 
 
-CONTRIBUTING
+##CONTRIBUTING
 ------------
 Contributions to improve 'ddnsaws' are welcomed! Here's how you can contribute:
 
@@ -79,12 +79,12 @@ Contributions to improve 'ddnsaws' are welcomed! Here's how you can contribute:
 Please ensure your contributions adhere to the existing coding style and functionality.
 
 
-LICENSE
+##LICENSE
 -------
 Distributed under the MIT License. See 'LICENSE' for more information.
 
 
-CONTACT
+##CONTACT
 -------
 For issues, questions, or assistance, please use the GitHub issue tracker or contact the maintainers directly.
 
