@@ -45,7 +45,12 @@ SETUP AND DEPLOYMENT
 ```
    Important: Keep your AWS credentials confidential to prevent unauthorized access.
 
-3. Build and Run with Docker:
+   Configure subdomain list:
+   
+   - Rename 'app/subdomainlist.json.example' to 'subdomainlist.json'.
+   - Update 'subdomainlist.json' with your subdomains accordingly.
+
+4. Build and Run with Docker:
    In the project's root directory, use Docker Compose to build and start the service.
 ```
    docker-compose build
