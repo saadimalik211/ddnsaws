@@ -4,7 +4,7 @@
 
 DESCRIPTION
 -----------
-'ddnsaws' is a tool that automates the process of keeping a DNS record updated with a server's most current IP address. This script is especially useful in environments with dynamic public IP addresses. It's Dockerized and uses AWS Boto3 for interacting with AWS services.
+'ddnsaws' is a tool that automates the process of keeping a DNS record updated with a server's most current IP address. This script is especially useful in environments with dynamic public IP addresses. It's Dockerized and uses AWS Boto3 for interacting with AWS services. Thank to Docker, you do not have to worry about the specific app prerequisites such as python, BOTO, etc.. as these will get built into the docker container for you (all you will need is Docker & Docker Compose)
 
 
 FEATURES
