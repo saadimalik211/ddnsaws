@@ -2,6 +2,7 @@ version: '3.3'
 
 services:
   route53-updater:
+    container_name: ddns_aws
     image: docker.gensosekai.com/ddnsaws
     env_file:
       - ddns.env  # Load environment variables from this file

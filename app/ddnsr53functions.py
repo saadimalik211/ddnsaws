@@ -6,8 +6,8 @@ import os
 # Constants for AWS access, replace with your actual details
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_REGION_NAME = 'us-east-1'
-HOSTED_ZONE_ID = 'Z07327142R5L0CABUK8JB'
+AWS_REGION_NAME = os.getenv('AWS_REGION_NAME')
+HOSTED_ZONE_ID = os.getenv('HOSTED_ZONE_ID')
 
 def get_public_ip():
     response = requests.get("http://checkip.amazonaws.com/")
